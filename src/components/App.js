@@ -5,7 +5,7 @@ import MovieItem from "./MovieItem"
 const movie  = {
   title: "Avengers: Infinity War",
   vote_average: 8.5,
-  image: ""
+  image: "https://i.ibb.co/s5kf06c/Mlgy.gif"
 }
 export const App = () => {
   
