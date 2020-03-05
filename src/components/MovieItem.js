@@ -3,6 +3,7 @@ import Image from "./Image"
 
  const MovieItem = (props) => {
      console.log("MovieItem props = ", props);
+     
      const {data: {title, vote_average, image}} = props;
     return(
         <div>
