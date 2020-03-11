@@ -8,7 +8,7 @@ const moviesData = [
       vote_average: 8.5,
       title: "Avengers: Infinity War",
       popularity: 160.36938,
-      poster_path: "https://i.ibb.co/s5kf06c/Mlgy.gif", //"/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+      poster_path: "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",//"https://i.ibb.co/s5kf06c/Mlgy.gif", //
       original_language: "en",
       original_title: "Avengers: Infinity War",
       backdrop_path: "/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
