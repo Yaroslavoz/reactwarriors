@@ -9,10 +9,12 @@ class MovieItem extends React.Component {
 
   };
    toggleOverview = () => {
-    this.setState(!this.state.show);
+    const neShow = !this.state.show
+     this.setState({show:neShow});
  }
   handleLike = () => {
-     this.setState(!this.state.like);
+    const neLike = !this.state.like
+     this.setState({like:neLike});
  }
 
   render() {

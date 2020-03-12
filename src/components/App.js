@@ -47,8 +47,13 @@ import MovieItem from "./MovieItem"
     console.log('render', this.state, this);
     
     return (
-          <div>
-            <div className=" w-3/4 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2       lg:grid-cols-3 xl:grid-cols-4">
+          <div >
+            
+            <div className=" w-3/4 mx-auto grid grid-rows-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className='w-3/4 flex flex-row-reverse   fixed '>
+              <p className='ml-12 opacity-75 hover:opacity-100 bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center'>Will watch: {this.state.moviesWillWatch.length}</p>
+            </div>
+            
               {this.state.movies.map(movie => {
                 return (
                   <MovieItem 
@@ -61,9 +66,7 @@ import MovieItem from "./MovieItem"
                 )
               })}
             </div>
-            <div>
-              <p>Will watch: {this.state.moviesWillWatch.length}</p>
-            </div>
+            
           </div>
       );
     }
