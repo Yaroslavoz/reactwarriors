@@ -26,7 +26,7 @@ class MovieItem extends React.Component {
     } = this.props;
     // props.data = {};
     return (
-        <div className="m-2  max-w-sm rounded overflow-hidden shadow-lg">
+        <div className="bg-indigo-200 hover:bg-indigo-300 m-2  max-w-sm rounded overflow-hidden shadow-lg">
             
             
         <Image className='w-full' src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path || movie.poster_path}`} alt={movie.title}/>

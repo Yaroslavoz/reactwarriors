@@ -1,23 +1,28 @@
 import React from "react";
-import MoviesData from '../MoviesData'
+// import MoviesData from '../MoviesData'
 import MovieItem from "./MovieItem"
+import {API_URL, API_KEY_3} from '../utils/api'
 
 
 
-//  {
-//   title: "Avengers: Infinity Stallone",
-//   vote_average: 8.5,
-//   image: "https://i.ibb.co/s5kf06c/Mlgy.gif",
-//   overview: 'This is John Rembo Spartanian '
-// }
  class App extends React.Component {
   constructor(){
     super();
 
     this.state = {
-      movies: MoviesData,
+      movies: [],
       moviesWillWatch: []
     };
+  }
+
+  componentDidMount (){
+    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}`).then((res) => {
+      return res.json()
+    }).then((data) => {
+      this.setState({
+        movies: data.results
+      })
+    })
   }
 
   removeMovie = movie => {
