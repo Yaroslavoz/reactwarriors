@@ -12,7 +12,8 @@ import MovieTabs from "./MovieTabs";
 
     this.state = {
       movies: [],
-      moviesWillWatch: []
+      moviesWillWatch: [],
+      sort_by: "popularity.desc"
     };
   }
 
