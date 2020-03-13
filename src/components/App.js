@@ -55,7 +55,7 @@ import MovieTabs from "./MovieTabs";
     return (
           <div >
             <div class="container w-3/4 grid grid-cols-1  h-25 mx-auto">
-              <div class="w-full    p-2 rounded-b bg-gray-300 h-12">
+              <div class="w-full    p-2 rounded-b bg-gray-100 h-12">
                 <MovieTabs />
               </div>
             </div>
