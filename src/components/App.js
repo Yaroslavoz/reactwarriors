@@ -18,7 +18,7 @@ import MovieTabs from "./MovieTabs";
   }
 
   componentDidMount (){
-    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}`).then((res) => {
+    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`).then((res) => {
       return res.json()
     }).then((data) => {
       this.setState({
@@ -50,6 +50,13 @@ import MovieTabs from "./MovieTabs";
     });
   }
 
+  updateSorting = value => {
+    
+    this.setState({
+      sort_by: value
+    });
+  };
+
   render(){
     console.log('render', this.state, this);
     
@@ -57,12 +64,15 @@ import MovieTabs from "./MovieTabs";
           <div >
             <div class="container w-3/4 grid grid-cols-1  h-25 mx-auto">
               <div class="w-full    p-2 rounded-b bg-gray-100 h-12">
-                <MovieTabs />
+                <MovieTabs 
+                  sort_by={this.state.sort_by}
+                  updateSorting={this.updateSorting}
+                  />
               </div>
             </div>
 
 
-            <div className=" container w-3/4 mx-auto grid grid-rows-2 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className=" container w-3/4 mx-auto grid  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 
             
             <div className='container w-3/4 flex flex-row-reverse   fixed '>
