@@ -26,7 +26,7 @@ class MovieItem extends React.Component {
     } = this.props;
     // props.data = {};
     return (
-        <div className="flex flex-wrap h-auto bg-gray-200  content-between hover:bg-gray-300 m-2 sm:mx-auto md:m-2 lg:m-2 xl:m-2 rounded overflow-hidden shadow-lg py-auto ">
+        <div className="flex flex-wrap h-auto bg-orange-700  content-between hover:bg-orange-800 m-2 sm:mx-auto md:m-2 lg:m-2 xl:m-2 rounded overflow-hidden shadow-2xl transition ease-in-out duration-700 transform hover:-translate-y-2 hover:scale-110 py-auto ">
             
             
         
@@ -75,7 +75,7 @@ class MovieItem extends React.Component {
                   Will Watch
               </button>
               )}
-              <p className='p-2'>{movie.vote_average}</p>
+              <p className='p-2'>Vote average: <strong>{movie.vote_average}</strong></p>
           </div>
           
 

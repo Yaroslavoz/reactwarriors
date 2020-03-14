@@ -14,15 +14,15 @@ const MovieTabs = (props) => {
     }
 
     return (
-        <ul className="flex">
+        <ul className="flex w-3/4">
             <li className="mr-3">
-                <a className={getClassName('popularity.desc')} onClick={handleClick('popularity.desc')}>Popularity desc</a>
+                <div className={getClassName('popularity.desc')} onClick={handleClick('popularity.desc')}>Popularity desc</div>
             </li>
             <li className="mr-3">
-                <a className={getClassName('revenue.desc')} onClick={handleClick('revenue.desc')}>Revenue desc</a>
+                <div className={getClassName('revenue.desc')} onClick={handleClick('revenue.desc')}>Revenue desc</div>
             </li>
             <li className="mr-3">
-                <a className={getClassName('vote_average.desc')} onClick={handleClick('vote_average.desc')}>Vote average desc</a>
+                <div className={getClassName('vote_average.desc')} onClick={handleClick('vote_average.desc')}>Vote average desc</div>
             </li>
         </ul>
     )

@@ -17,6 +17,13 @@ import MovieTabs from "./MovieTabs";
     };
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log("didUpdate");
+    console.log("prev", prevProps, prevState);
+    console.log("this", this.props, this.state);
+        
+  }
+
   componentDidMount (){
     fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`).then((res) => {
       return res.json()
@@ -61,23 +68,25 @@ import MovieTabs from "./MovieTabs";
     console.log('render', this.state, this);
     
     return (
-          <div >
-            <div class="container w-3/4 grid grid-cols-1  h-25 mx-auto">
-              <div class="w-full    p-2 rounded-b bg-gray-100 h-12">
+          <div className='root-bg bg-fixed bg-indigo-200'>
+            <div className="container w-3/4 grid grid-cols-1   h-25 mx-auto">
+              <div className="w-full flex flex-nowrap  justify-between items-center  p-2 rounded-b bg-yellow-900 h-12">
                 <MovieTabs 
                   sort_by={this.state.sort_by}
                   updateSorting={this.updateSorting}
                   />
+                 {/* <div className='mr-8 w-3/4 flex flex-row-reverse fixed items-baseline z-10'> */}
+                <p className='fixed right-0 opacity-75 hover:opacity-100 bg-gray-300 text-gray-800 font-bold p-2 rounded inline-flex items-center z-10'>Will watch: {this.state.moviesWillWatch.length}</p>
+                {/* </div> */}
               </div>
+                
             </div>
 
 
             <div className=" container w-3/4 mx-auto grid  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 
             
-            <div className='container w-3/4 flex flex-row-reverse   fixed '>
-              <p className='ml-12 opacity-75 hover:opacity-100 bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center'>Will watch: {this.state.moviesWillWatch.length}</p>
-            </div>
+            
             
               {this.state.movies.map(movie => {
                 return (
