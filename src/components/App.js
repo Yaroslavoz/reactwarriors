@@ -21,17 +21,11 @@ import MovieTabs from "./MovieTabs";
     console.log("didUpdate");
     console.log("prev", prevProps, prevState);
     console.log("this", this.props, this.state);
-        
+    this.getMovies()   
   }
 
   componentDidMount (){
-    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`).then((res) => {
-      return res.json()
-    }).then((data) => {
-      this.setState({
-        movies: data.results
-      })
-    })
+    this.getMovies()
   }
 
   removeMovie = movie => {
@@ -58,11 +52,21 @@ import MovieTabs from "./MovieTabs";
   }
 
   updateSorting = value => {
-    
     this.setState({
       sort_by: value
     });
+    
   };
+
+  getMovies = () => {
+    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`).then((res) => {
+      return res.json()
+    }).then((data) => {
+      this.setState({
+        movies: data.results
+      })
+    })
+  }
 
   render(){
     console.log('render', this.state, this);
