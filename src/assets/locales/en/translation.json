@@ -1,0 +1,13 @@
+{
+  "header": {  
+    "docs": "Docs",
+    "examples": "Examples",
+    "blog": "Blog",
+    "download": "Download"
+  },
+  "404": {
+    "message1": "Page Not Found",
+    "message2": "It looks like you found a glitch in the matrix...",
+    "button": "Back to Dashboard"
+  }
+}

@@ -4,10 +4,11 @@
   "private": true,
   "dependencies": {
     "node": "^13.10.1",
+    "node-sass": "^4.13.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
-    "sass": "^1.26.2",
+    "sass": "^1.26.3",
     "tailwind": "^4.0.0"
   },
   "scripts": {

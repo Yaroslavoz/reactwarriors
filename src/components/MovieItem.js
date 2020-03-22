@@ -5,7 +5,9 @@ class MovieItem extends React.Component {
   state = {
     willWatch: false,
     like: false,
-    show: false
+    show: false,
+    start_link: 'https://image.tmdb.org/t/p/w500',
+    default_link: '../css/sparta.gif'
 
   };
    toggleOverview = () => {
@@ -26,12 +28,12 @@ class MovieItem extends React.Component {
     } = this.props;
     // props.data = {};
     return (
-        <div className="flex flex-wrap h-auto bg-orange-700  content-between hover:bg-orange-800 m-2 sm:mx-auto md:m-2 lg:m-2 xl:m-2 rounded overflow-hidden shadow-2xl transition ease-in-out duration-700 transform hover:-translate-y-2 hover:scale-110 py-auto ">
+        <div className="flex flex-wrap h-auto bg-indigo-700  content-between hover:bg-indigo-800 m-2 sm:mx-auto md:m-2 lg:m-2 xl:m-2 rounded overflow-hidden shadow-2xl transition ease-in-out duration-700 transform hover:-translate-y-2 hover:scale-110 py-auto ">
             
             
         
         <div className="  py-auto "> 
-             <Image className='w-full' src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path || movie.poster_path}`} alt={movie.title}/>   
+             <Image className='w-full' src={ `${this.state.start_link}${movie.backdrop_path || movie.poster_path }` ? `${this.state.start_link}${movie.backdrop_path || movie.poster_path }` : this.state.start_link } alt={movie.title}/>   
                 
               <div className="font-bold text-xl mb-2 p-2">{movie.title}</div>
               
