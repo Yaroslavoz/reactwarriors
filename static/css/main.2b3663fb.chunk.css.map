@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA,cAAS,CACT,oBAAS,CACT,mBAAS,CAIT,SACI,mEAAqC","file":"main.2b3663fb.chunk.css","sourcesContent":["@tailwind base;\r\n@tailwind components;\r\n@tailwind utilities;\r\n/* //@import './style.css'; */\r\n\r\n\r\n.root-bg {\r\n    background-image: url(./css/wall.jpg);\r\n}"]}

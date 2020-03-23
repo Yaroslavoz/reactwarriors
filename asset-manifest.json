@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/reactwarriors/static/css/main.2b3663fb.chunk.css",
+    "main.js": "/reactwarriors/static/js/main.42d53a36.chunk.js",
+    "main.js.map": "/reactwarriors/static/js/main.42d53a36.chunk.js.map",
+    "runtime~main.js": "/reactwarriors/static/js/runtime~main.58be9cf0.js",
+    "runtime~main.js.map": "/reactwarriors/static/js/runtime~main.58be9cf0.js.map",
+    "static/js/2.e345f4bf.chunk.js": "/reactwarriors/static/js/2.e345f4bf.chunk.js",
+    "static/js/2.e345f4bf.chunk.js.map": "/reactwarriors/static/js/2.e345f4bf.chunk.js.map",
+    "index.html": "/reactwarriors/index.html",
+    "precache-manifest.22a100fac24af575c83a43f31b05aa42.js": "/reactwarriors/precache-manifest.22a100fac24af575c83a43f31b05aa42.js",
+    "service-worker.js": "/reactwarriors/service-worker.js",
+    "static/css/main.2b3663fb.chunk.css.map": "/reactwarriors/static/css/main.2b3663fb.chunk.css.map",
+    "static/media/index.scss": "/reactwarriors/static/media/wall.d9361c37.jpg"
+  }
+}
