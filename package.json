@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
     "node": "^13.10.1",
     "node-sass": "^4.13.1",
     "react": "^16.9.0",

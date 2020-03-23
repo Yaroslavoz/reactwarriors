@@ -25,12 +25,14 @@ const handleClick = (value) => {
             <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
                 <div>
                     <p className="text-sm leading-5 text-white">
-                        Showing 
+                        {'Showing from '}
                         <span className="font-medium">{currentPage}</span>
+                        {' to '}
+                        <span className="font-medium">{currentPage+5}</span>
                          
-                         of
+                         {' of '}
                         <span className="font-medium">{total_pages}</span>
-                        pages
+                        {' pages'}
                     </p>
                 </div>
             <div>

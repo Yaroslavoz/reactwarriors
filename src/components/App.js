@@ -20,6 +20,8 @@ import Pagination from './Pagination'
     };
   }
 
+ 
+
   componentDidUpdate(prevProps, prevState) {
    
    return (prevState.sort_by !== this.state.sort_by)  || (prevState.currentPage !== this.state.currentPage ) ? this.getMovies() : ''   
@@ -140,7 +142,7 @@ next = () => {
               })}
               
             </div>
-            <div className="container w-3/4 grid grid-cols-1   h-25 mx-auto">
+            <div className="container w-3/4 grid grid-cols-1 rounded-t h-25 mx-auto">
               <Pagination 
                     prev={this.prev}
                     next={this.next}
