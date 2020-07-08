@@ -6,7 +6,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "node": "^13.10.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
@@ -21,7 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,5 +40,5 @@
   "devDependencies": {
     "gh-pages": "^2.2.0",
     "tailwindcss": "^1.2.0"
-  }  
+  }
 }
