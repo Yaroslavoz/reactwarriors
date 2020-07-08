@@ -18,6 +18,8 @@ import Image from "./components/Image"
         setWatch((prevState) =>({
             willWatch: !prevState }));
      }
+
+     
     //  const handleWillWatch = () => {
     //      setWatch()
     //  }
